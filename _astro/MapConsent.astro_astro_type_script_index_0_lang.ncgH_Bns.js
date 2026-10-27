@@ -1,0 +1,1 @@
+for(let e of document.querySelectorAll(`[data-map-load]`))e.addEventListener(`click`,()=>{let t=e.closest(`.mapbox`);if(!t?.dataset.map)return;let n=document.createElement(`iframe`);n.src=t.dataset.map,n.title=t.dataset.mapTitle??`Google Maps`,n.loading=`lazy`,n.referrerPolicy=`no-referrer-when-downgrade`,n.allowFullscreen=!0,t.replaceChildren(n),n.focus()});
